@@ -38,6 +38,7 @@ app.post('/image', (req, res) => {
     return res.status(500).json('error')
   }
 })
+
 app.get('/image', (req, res) => {
   try {
     const file = fs.readFileSync(
